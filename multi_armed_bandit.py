@@ -1,7 +1,17 @@
 from random import random
 
 class Env():
-    def __init__(self, N=3, probs=(0.2, 0.3, 0.5), rewards=(0, 1), max_game_num=200, win_num=25) -> None:
+    def __init__(self, N=3, probs=(0.2, 0.3, 0.5), rewards=(0, 1), max_game_num=200, win_num=25):
+        """
+        Initializes the environment for the Multi-Armed Bandit problem.
+
+        Args:
+            N (int): Number of arms.
+            probs (list of floats): Winning probability for each arm.
+            rewards (list of floats): Rewards for losing and winning.
+            max_game_num (int): Maximum number of games allowed.
+            win_num (int): Number of wins required in a row to win the game.
+        """
         if N != len(probs):
             raise Exception("Number of probabilities should be equal to the number of arms.")
         
