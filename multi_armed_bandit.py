@@ -1,6 +1,6 @@
 from random import random
 
-class Env():
+class BanditEnv():
     def __init__(self, N=3, probs=(0.2, 0.3, 0.5), rewards=(0, 1), max_game_num=200, win_num=25):
         """
         Initializes the environment for the Multi-Armed Bandit problem.
