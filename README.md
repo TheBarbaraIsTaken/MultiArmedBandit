@@ -8,7 +8,6 @@ This repository provides a Python implementation of the **Multi-Armed Bandit** p
 - [Installation](#installation)
 - [Usage](#usage)
 - [Examples](#examples)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Introduction
